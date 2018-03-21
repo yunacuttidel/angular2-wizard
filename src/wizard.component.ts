@@ -24,12 +24,12 @@ import { WizardStepComponent } from './wizard-step.component';
   ,
   styles: [
     '.card { height: 100%; }',
-    '.card-header { background-color: #fff; padding: 0; font-size: 1.25rem; }',
+    '.card-header { background-color: red; padding: 0; font-size: 1.25rem; }',
     '.card-block { overflow-y: auto; }',
-    '.card-footer { background-color: #fff; border-top: 0 none; }',
-    '.nav-item { padding: 1rem 0rem; border-bottom: 0.5rem solid #ccc; }',
-    '.active { font-weight: bold; color: black; border-bottom-color: #1976D2 !important; }',
-    '.enabled { cursor: pointer; border-bottom-color: rgb(88, 162, 234); }',
+    '.card-footer { background-color: red; border-top: 0 none; }',
+    '.nav-item { padding: 1rem 0rem; border-bottom: 0.5rem solid red; }',
+    '.active { font-weight: bold; color: black; border-bottom-color: red !important; }',
+    '.enabled { cursor: pointer; border-bottom-color: red; }',
     '.disabled { color: #ccc; }',
     '.completed { cursor: default; }'
   ]
