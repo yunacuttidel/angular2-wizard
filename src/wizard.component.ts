@@ -5,6 +5,7 @@ import { WizardStepComponent } from './wizard-step.component';
   selector: 'form-wizard',
   template:
   `
+
 <div class="card">
     <div class="card-header">
         <h5>Form wizard with Validation</h5>
@@ -22,13 +23,18 @@ import { WizardStepComponent } from './wizard-step.component';
                     <section>
                         <form class="wizard-form wizard clearfix" id="example-advanced-form" action="#" role="application" novalidate="novalidate">
                             <div class="steps clearfix"><ul role="tablist">
-                                <li role="tab" class="first current" aria-disabled="false" aria-selected="true">
+                              
+                         <!--  
+                              <li role="tab" class="first current" aria-disabled="false" aria-selected="true">
                                     <a id="example-advanced-form-t-0" href="#example-advanced-form-h-0" aria-controls="example-advanced-form-p-0">
                             <span class="current-info audible">current step: </span>
-                            <span class="number">1.</span>  Registration </a></li>
+                            <span class="number">1.</span>  Registration </a></li> 
                             <li role="tab" class="disabled" aria-disabled="true"><a id="example-advanced-form-t-1" href="#example-advanced-form-h-1" aria-controls="example-advanced-form-p-1"><span class="number">2.</span>  General information </a></li>
                             <li role="tab" class="disabled" aria-disabled="true"><a id="example-advanced-form-t-2" href="#example-advanced-form-h-2" aria-controls="example-advanced-form-p-2"><span class="number">3.</span>  Education </a></li>
                             <li role="tab" class="disabled last" aria-disabled="true"><a id="example-advanced-form-t-3" href="#example-advanced-form-h-3" aria-controls="example-advanced-form-p-3"><span class="number">4.</span>  Work experience </a></li>
+
+                         -->
+
                         </ul></div><div class="content clearfix">
                            
                                 <li class="nav-item" *ngFor="let step of steps" [ngClass]="{'active': step.isActive, 'enabled': !step.isDisabled, 'disabled': step.isDisabled, 'completed': isCompleted}">
@@ -46,17 +52,8 @@ import { WizardStepComponent } from './wizard-step.component';
 </div>
   `
   ,
-  styles: [
-    '.card { border-radius: 2px;  border-top: 4px solid rgba(0, 115, 170, 0.5);-webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05); box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);    border-left: none;    border-right: none;border-bottom: none; margin-bottom: 30px; }',
-    '.card-header { background-color: red; padding: 0; font-size: 1.25rem; }',
-    '.card-block { overflow-y: auto; }',
-    '.card-footer { background-color: red; border-top: 0 none; }',
-    '.nav-item { padding: 1rem 0rem; border-bottom: 0.5rem solid red; }',
-    '.active { font-weight: bold; color: black; border-bottom-color: red !important; }',
-    '.enabled { cursor: pointer; border-bottom-color: red; }',
-    '.disabled { color: #ccc; }',
-    '.completed { cursor: default; }'
-  ]
+  styleUrls: ['./style.css']
+ 
 })
 export class WizardComponent implements AfterContentInit {
   @ContentChildren(WizardStepComponent)
