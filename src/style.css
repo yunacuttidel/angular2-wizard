@@ -661,12 +661,12 @@ Tooltip css start
     margin: -7px 0 0 -15px;
     width: 30px;
     height: 20px;
-    background: url("../images/tooltip/tooltip1.svg") center center no-repeat;
+    
     background-size: 100%; }
 
 .tooltip-content3 {
   position: absolute;
-  background: url("../images/tooltip/shape1.svg") center bottom no-repeat;
+  
   background-size: 100% 100%;
   z-index: 9999;
   width: 200px;
@@ -832,8 +832,6 @@ Tree-view css start
     display: inherit;
     float: none; }
 
-.jstree-default > .jstree-container-ul .jstree-loading > .jstree-ocl {
-  background: url("../pages/treeview/throbber.gif") center center no-repeat; }
 
 /**====== Tree-view css end ======**/
 /**  =====================
@@ -2639,7 +2637,9 @@ Wizard css start
   padding: 0; }
 
 .wizard > .content > .body {
-  width: 100%; }
+  width: 100%; 
+background-color: blue ;
+}
 
 .wizard > .content {
   min-height: 695px; }
@@ -9132,13 +9132,13 @@ td.highlight {
   text-align: center; }
 
 td.details-control {
-  background: url("../images/details_open.png") no-repeat center center;
+
   cursor: pointer; }
 
 tr.shown td.details-control {
-  background: url("../images/details_close.png") no-repeat center center; }
 
-#row-select .selected,
+}
+
 #row-delete .selected {
   background-color: #0073aa;
   color: #fff; }
@@ -10493,7 +10493,7 @@ table.footable-paging-center > tfoot > tr.footable-paging > td {
  ========================================= */
 .common-img-bg {
   background-size: cover;
-  background: url(../images/bg.jpg) no-repeat center center fixed;
+ 
   height: 100%; }
   @media only screen and (max-width: 992px) {
     .common-img-bg {
@@ -10822,7 +10822,7 @@ table.footable-paging-center > tfoot > tr.footable-paging > td {
       Chatting css start
 ==========================  **/
 .chat-bg {
-  background-image: url("../images/chat-bg.jpg");
+
   background-size: cover;
   background-blend-mode: overlay;
   background-color: rgba(255, 255, 255, 0.45); }
@@ -15591,7 +15591,7 @@ span.value {
     -webkit-transition: all ease-in 0.3s;
     transition: all ease-in 0.3s; }
     #task-container li.complete:before {
-      background: url("../images/complete.png") no-repeat;
+  
       position: absolute;
       top: 5px;
       right: 5px;
@@ -18390,25 +18390,6 @@ body.dark-layout {
 .pcoded[theme-layout="vertical"][vertical-placement="right"][vertical-nav-type="collapsed"] .pcoded-search.open .pcoded-search-box {
   right: 0; }
 
-/* Theme Patteren CSS Start */
-body[themebg-pattern="pattern1"] {
-  background-image: url("../images/pattern1.png"); }
-body[themebg-pattern="pattern2"] {
-  background-image: url("../images/pattern2.png"); }
-body[themebg-pattern="pattern3"] {
-  background-image: url("../images/pattern3.png"); }
-body[themebg-pattern="pattern4"] {
-  background-image: url("../images/pattern4.png"); }
-body[themebg-pattern="pattern5"] {
-  background-image: url("../images/pattern5.png"); }
-body[themebg-pattern="pattern6"] {
-  background-image: url("../images/pattern6.png"); }
-body[themebg-pattern="pattern7"] {
-  background-image: url("../images/pattern7.png"); }
-body[themebg-pattern="pattern8"] {
-  background-image: url("../images/pattern8.png"); }
-body[themebg-pattern="pattern9"] {
-  background-image: url("../images/pattern9.png"); }
 
 /* Theme Patteren CSS Close */
 /* ########### Theme1 Color Combation CSS Style Start Here ##################### */
@@ -19150,25 +19131,7 @@ body[themebg-pattern="pattern9"] {
       background: #384b5f; }
     .theme-color a[sub-item-theme="theme9"] {
       background: #578ebe; }
-    .theme-color a[themebg-pattern="pattern1"] {
-      background-image: url("../images/pattern1.png"); }
-    .theme-color a[themebg-pattern="pattern2"] {
-      background-image: url("../images/pattern2.png"); }
-    .theme-color a[themebg-pattern="pattern3"] {
-      background-image: url("../images/pattern3.png"); }
-    .theme-color a[themebg-pattern="pattern4"] {
-      background-image: url("../images/pattern4.png"); }
-    .theme-color a[themebg-pattern="pattern5"] {
-      background-image: url("../images/pattern5.png"); }
-    .theme-color a[themebg-pattern="pattern6"] {
-      background-image: url("../images/pattern6.png"); }
-    .theme-color a[themebg-pattern="pattern7"] {
-      background-image: url("../images/pattern7.png"); }
-    .theme-color a[themebg-pattern="pattern8"] {
-      background-image: url("../images/pattern8.png"); }
-    .theme-color a[themebg-pattern="pattern9"] {
-      background-image: url("../images/pattern9.png"); }
-
+    
 .pcoded[theme-layout="vertical"][pcoded-device-type="phone"] .spark-chart, .pcoded[theme-layout="vertical"][pcoded-device-type="tablet"] .spark-chart {
   display: none; }
 
