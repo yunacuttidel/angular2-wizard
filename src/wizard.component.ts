@@ -38,8 +38,8 @@ import { WizardStepComponent } from './wizard-step.component';
                         </ul></div><div class="content clearfix">
                            
                                 <li class="nav-item" *ngFor="let step of steps" [ngClass]="{'active': step.isActive, 'enabled': !step.isDisabled, 'disabled': step.isDisabled, 'completed': isCompleted}">
-                                     <!--   <a (click)="goToStep(step)">{{step.title}}</a>    -->
-                                        <h3 id="example-advanced-form-h-0" tabindex="-1" (click)="goToStep(step)" class="title current"> {{step.title}} </h3>
+                                      
+                                        <h3 id="example-advanced-form-h-0" tabindex="-1" (click)="goToStep(step)" class="title current"> <a (click)="goToStep(step)">{{step.title}} hello </a></h3>
                                       </li>
                           
                                                    
