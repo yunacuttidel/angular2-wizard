@@ -22,25 +22,25 @@ import { WizardStepComponent } from './wizard-step.component';
                 <div id="wizard">
                     <section>
                         <form class="wizard-form wizard clearfix" id="example-advanced-form" action="#" role="application" novalidate="novalidate">
-                            <div class="steps clearfix"><ul role="tablist">
-                              
-                         <!--  
-                              <li role="tab" class="first current" aria-disabled="false" aria-selected="true">
-                                    <a id="example-advanced-form-t-0" href="#example-advanced-form-h-0" aria-controls="example-advanced-form-p-0">
-                            <span class="current-info audible">current step: </span>
-                            <span class="number">1.</span>  Registration </a></li> 
-                            <li role="tab" class="disabled" aria-disabled="true"><a id="example-advanced-form-t-1" href="#example-advanced-form-h-1" aria-controls="example-advanced-form-p-1"><span class="number">2.</span>  General information </a></li>
-                            <li role="tab" class="disabled" aria-disabled="true"><a id="example-advanced-form-t-2" href="#example-advanced-form-h-2" aria-controls="example-advanced-form-p-2"><span class="number">3.</span>  Education </a></li>
-                            <li role="tab" class="disabled last" aria-disabled="true"><a id="example-advanced-form-t-3" href="#example-advanced-form-h-3" aria-controls="example-advanced-form-p-3"><span class="number">4.</span>  Work experience </a></li>
+                            <div class="steps clearfix">
 
-                         -->
+<ul role="tablist" *ngFor="let step of steps">
+                              
+                        
+                             
+                            <li role="tab" [ngClass]="{'active': step.isActive, 'enabled': !step.isDisabled, 'disabled': step.isDisabled, 'completed': isCompleted}" >
+<a id="example-advanced-form-t-1" href="#example-advanced-form-h-1" aria-controls="example-advanced-form-p-1" (click)="goToStep(step)>
+                        {{step.title}} 
+</a>
+                             </li>
+                           
+                      
 
                         </ul></div><div class="content clearfix">
                            
-                                <li class="nav-item" *ngFor="let step of steps" [ngClass]="{'active': step.isActive, 'enabled': !step.isDisabled, 'disabled': step.isDisabled, 'completed': isCompleted}">
-                                      
-                                        <h3 id="example-advanced-form-h-0" tabindex="-1" (click)="goToStep(step)" class="title current"> <a (click)="goToStep(step)">{{step.title}} hello </a></h3>
-                                      </li>
+                       <li class="nav-item" *ngFor="let step of steps" [ngClass]="{'active': step.isActive, 'enabled': !step.isDisabled, 'disabled': step.isDisabled, 'completed': isCompleted}">
+                         <h3 id="example-advanced-form-h-0" tabindex="-1" > <a (click)="goToStep(step)">{{step.title}} hello </a></h3>
+                        </li>
                           
                                                    
                         </div><div class="actions clearfix"><ul role="menu" aria-label="Pagination"><li class="disabled" aria-disabled="true"><a href="#previous" role="menuitem">Previous</a></li><li aria-hidden="false" aria-disabled="false"><a href="#next" role="menuitem">Next</a></li><li aria-hidden="true" style="display: none;"><a href="#finish" role="menuitem">Finish</a></li></ul></div></form>
